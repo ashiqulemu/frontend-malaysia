@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <title>AppKit BootStrap</title>
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css" />
+    <link rel="manifest" href="_manifest.json" />
+    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png" />
+</head>
+
+<body class="bg-white" data-highlight="highlight-red">
+    <div id="preloader">
+        <div class="spinner-border color-highlight" role="status"></div>
+    </div>
+
+    <div id="page">
+        <div class="header header-auto-show header-fixed header-logo-center">
+            <a href="index.html" class="header-title">AppKit</a>
+            <a href="#" data-menu="menu-main" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
+            <a href="#" data-toggle-theme class="header-icon header-icon-4 show-on-theme-dark"><i
+                    class="fas fa-sun"></i></a>
+            <a href="#" data-toggle-theme class="header-icon header-icon-4 show-on-theme-light"><i
+                    class="fas fa-moon"></i></a>
+            <a href="#" data-menu="menu-share" class="header-icon header-icon-3"><i class="fas fa-share-alt"></i></a>
+        </div>
+
+        <div id="footer-bar" class="footer-bar-6">
+            <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+            <a href="index-pages.html"><i class="fa fa-file"></i><span>Pages</span></a>
+            <a href="index.html" class="circle-nav active-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+            <a href="index-projects.html"><i class="fa fa-image"></i><span>Projects</span></a>
+            <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+        </div>
+        <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-width="280" data-menu-active="nav-welcome" data-menu-load="menu-main.html"></div>
+        <div class="header  border-0 header-fixed header-logo-left">
+            <div class="row mb-0 shadow-m py-3 px-3  bg-gray-light">
+                <div class="col-8">
+                    <div class="d-flex  align-items-center h-100">
+                        <div class="font-600 font-22 ms-2 text-black">
+                            <i data-menu="menu-main" class="fas fa-bars"></i>
+                        </div>
+                        <div class="font-600 font-18 ms-3 text-black">
+                            User Dashboard
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-4">
+                    <div class="d-flex h-100 justify-content-end align-items-center">
+                        <span class="font-600 font-22 ms-2 text-black me-3">
+                            <i class="fas fa-bell"></i></span>
+                        <div class="rounded-circle bg-white  p-1 text-center" style="width: 34px;">
+                            <span class="fa-fw select-all fas text-secondary font-15"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="page-content mt-5">
+            <div class="mt-5">
+                <div class="container">
+                    <div class="row mb-0">
+                        <div class="col-4"> 
+                            <div class="card  bg-gray-light  text-center mx-0  ">
+                                <div class="content d-flex flex-column text-black ">
+                                    <span class="  mb-0 lh-sm font-17">Total <br> Projects</span>
+                                    <h1 class="font-24 font-700 mb-0 pb-0 mt-2">8</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="card  bg-gray-light text-center mx-0 ">
+                                <div class="content d-flex flex-column text-black">
+                                    <span class=" mb-0 lh-sm font-17">Active <br> Projects</span>
+                                    <h1 class="font-24 font-700 mb-0 pb-0 mt-2">6</h1>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-4">
+                            <div class="card bg-gray-light  text-center mx-0  ">
+                                <div class="content d-flex flex-column text-black">
+                                    <span class=" mb-0 lh-sm font-17">Completed <br> Projects</span>
+                                    <h1 class="font-24 font-700 mb-0 pb-0 mt-2">2</h1>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class=" ">
+                <div class="container">
+                    <div class="row  mb-0">
+                        <div class="col-12">
+                            <div class="pb-0">
+                                <div class="content" id="tab-group-UNIQUE-1">
+                                    <div class="tab-controls tabs-small tabs-rounded" data-highlight="bg-highlight">
+                                        <a href="#" class="text-black bg-gray-light font-15  rounded-xl mx-1 my-1 py-3 px-3 lh-sm font-500" data-active data-bs-toggle="collapse" data-bs-target="#tab-UNIQUE-NUMBER-1">Assignment </a>
+                                        <a href="#" class="text-black bg-gray-light font-15  rounded-xl mx-1 my-1 py-3 px-1 lh-sm font-500" data-bs-toggle="collapse" data-bs-target="#tab-UNIQUE-NUMBER-2">Pending Review</a>
+                                        <a href="#" class="text-black bg-gray-light font-15  rounded-xl mx-1 my-1 py-3 px-3 lh-sm font-500" data-bs-toggle="collapse" data-bs-target="#tab-UNIQUE-NUMBER-3">On Hold</a>
+                                    </div>
+                                    <div class="clearfix mb-3"></div>
+                                    <div data-bs-parent="#tab-group-UNIQUE-1" class="collapse show" id="tab-UNIQUE-NUMBER-1">
+                                        <div class="card card-style ms-0 rounded  me-0 shadow-sm mb-3">
+                                            <div class="content">
+                                                <div class="row mb-0">
+                                                    <div class="col-6">
+                                                        <h4 class="mb-3">Wireframe
+                                                            <a href="#" class="chip chip-s bg-yellow-light px-3 mb-0">
+                                                                <span class="ms-1 color-black font-14 font-400 ">High</span>
+                                                            </a>
+                                                        </h4>
+                                                        <span class="font-14 text-black">Role:</span> <span class="opacity-50">UI
+                                                                Designer</span>
+
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h4 class="text-end">
+                                                            <span class="fa-fw select-all fas  font-600 font-18 text-black"></span>
+                                                        </h4>
+
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-0">
+                                                    <div class="col-6">
+                                                        <div><big><span class="opacity-20 fa-fw select-all fas"></span></big> Due Date 23-april</div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="text-end"><big><span class=" opacity-20 fa-fw select-all fas"></span></big> 09/10 Hours</div>
+                                                        <a href="#" class="bg-gray-dark  w-100 mt-3 py-1 btn  btn-xs mb-3 rounded-xs text-capitalize   shadow-s ">
+                                                            <span class="font-14 font-400"> insert manually</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card card-style ms-0 rounded  me-0 shadow-sm mb-3">
+                                            <div class="content">
+                                                <div class="row mb-0">
+                                                    <div class="col-6">
+                                                        <h4 class="mb-3">Visual Design
+                                                            <a href="#" class="chip chip-s bg-yellow-light px-3 mb-0">
+                                                            </a>
+                                                        </h4>
+                                                        <span class="font-14 text-black">Role:</span> <span class="opacity-50">UI
+                                                                    Designer</span>
+
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h4 class="text-end"><span class="fa-fw select-all fas  "></span>
+                                                        </h4>
+
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-0">
+                                                    <div class="col-6">
+                                                        <div><big><span class="fa-fw select-all fas opacity-20"></span></big> Due Date 23-april</div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="text-end"><big><span class="fa-fw select-all fas opacity-20"></span></big> 09/10 Hours</div>
+                                                        <a href="#" class=" w-100 mt-3 py-1 btn bg-gray-dark   btn-xs mb-3 rounded-xs text-capitalize   shadow-s ">
+                                                            <span class="font-14 font-400"> insert manually</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div data-bs-parent="#tab-group-UNIQUE-1" class="collapse" id="tab-UNIQUE-NUMBER-2">
+                                        <div class="card card-style ms-0 rounded  me-0 shadow-sm mb-3 ">
+                                            <div class="content">
+                                                <div class="row  mb-0">
+                                                    <div class="col-6">
+                                                        <h4>User Story</h4>
+                                                        <div class=""><big><span
+                                                                    class="fa-fw select-all fas  opacity-20"></span></big> Due Date 23-april
+                                                        </div>
+                                                        <a href="#" class="bg-gray-dark w-100 mt-3 py-1 btn  btn-xs mb-3 rounded-xs text-capitalize   shadow-s bg-red-light">
+                                                            <span class="font-14 font-400"> Cancel Review</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h4>&nbsp;</h4>
+                                                        <div class="text-end"><big><span
+                                                                    class="fa-fw select-all fas  opacity-20"></span></big> 09/10 Hours
+                                                        </div>
+                                                        <a href="#" class="bg-gray-dark w-100 mt-3 py-1 btn  btn-xs mb-3 rounded-xs text-capitalize   shadow-s ">
+
+                                                            <span class="font-14 font-400"> Done Review</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="card card-style ms-0 rounded  me-0 shadow-sm mb-3 ">
+                                            <div class="content">
+                                                <div class="row  mb-0">
+                                                    <div class="col-6">
+                                                        <h4>User Story</h4>
+                                                        <div><big><span class="fa-fw select-all fas  opacity-20"></span></big> Due Date 23-april</div>
+                                                        <a href="#" class="bg-gray-dark w-100 mt-3 py-1 btn  btn-xs mb-3 rounded-xs text-capitalize   shadow-s ">
+                                                            <span class="font-14 font-400"> Cancel Review</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h4>&nbsp;</h4>
+                                                        <div class="text-end"><big><span
+                                                                    class="fa-fw select-all fas opacity-20"></span></big> 09/10 Hours
+                                                        </div>
+                                                        <a href="#" class="bg-gray-dark w-100 mt-3 py-1 btn  btn-xs mb-3 rounded-xs text-capitalize   shadow-s ">
+
+                                                            <span class="font-14 font-400"> Done Review</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div data-bs-parent="#tab-group-UNIQUE-1" class="collapse" id="tab-UNIQUE-NUMBER-3">
+                                        <div class="card card-style ms-0 rounded  me-0 shadow-sm">
+                                            <div class="content">
+                                                <div class="row mb-0">
+                                                    <div class="col-6">
+                                                        <h4>Infograsphy</h4>
+                                                        <div><big><span class="fa-fw select-all fas  opacity-20"></span></big> Due Date 23-april</div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h4>&nbsp;</h4>
+                                                        <div><big><span class="fa-fw select-all fas  opacity-20"></span></big> 09/10 Hours</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+        <script type="text/javascript" src="scripts/custom.js"></script>
+        <style>
+            .text-black {
+                color: #000!important;
+            }
+            
+            .bg-highlight {
+                background: #333333!important;
+                color: #fff!important;
+            }
+        </style>
+</body>
+
+</html>
