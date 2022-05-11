@@ -113,7 +113,7 @@
                         <div class="col-12">
                             <div class="pb-0">
                                 <div class="content" id="tab-group-UNIQUE-1">
-                                    <div class="tab-controls tabs-small tabs-rounded" data-highlight="bg-highlight">
+                                    <div class="tab-controls tabs-small tabs-rounded" id="adjust" data-highlight="bg-highlight">
                                         <a href="#" class="text-black bg-gray-light font-15  rounded-xl mx-1 my-1 py-3 px-3 lh-sm font-500" data-active data-bs-toggle="collapse" data-bs-target="#tab-UNIQUE-NUMBER-1">Assignment</a>
                                         <a href="#" class="text-black bg-gray-light font-15  rounded-xl mx-1 my-1 py-3 px-1 lh-sm font-500" data-bs-toggle="collapse" data-bs-target="#tab-UNIQUE-NUMBER-2">Pending Review</a>
                                         <a href="#" class="text-black bg-gray-light font-15  rounded-xl mx-1 my-1 py-3 px-3 lh-sm font-500" data-bs-toggle="collapse" data-bs-target="#tab-UNIQUE-NUMBER-3">On Hold</a>
@@ -362,6 +362,13 @@
                 border: unset;
                 align-self: unset;
                 margin: unset;
+            }
+            
+            @media(max-width:500px){
+                #adjust{
+                   display: flex;
+                   flex-direction: column;
+                }
             }
         </style>
 </body>
