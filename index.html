@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png" />
 </head>
 
-<body class="bg-white" data-highlight="highlight-red">
+<body class="" data-highlight="highlight-red">
     <div id="preloader">
         <div class="spinner-border color-highlight" role="status"></div>
     </div>
@@ -40,13 +40,13 @@
         </div>
         <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-width="280" data-menu-active="nav-welcome" data-menu-load="menu-main.html"></div>
         <div class="header  border-0 header-fixed header-logo-left">
-            <div class="row mb-0 shadow-m py-3 px-3  bg-gray-light">
+            <div class="row mb-0 shadow-m py-3 px-3  color-white bg-blue-dark">
                 <div class="col-8">
                     <div class="d-flex  align-items-center h-100">
-                        <div class="font-600 font-22 ms-2 text-black">
+                        <div class="font-600 font-22 ms-2 text-white">
                             <i data-menu="menu-main" class="fas fa-bars"></i>
                         </div>
-                        <div class="font-600 font-18 ms-3 text-black">
+                        <div class="font-600 font-18 ms-3 text-white">
                             User Dashboard
                         </div>
                     </div>
@@ -56,7 +56,9 @@
                 <div class="col-4">
                     <div class="d-flex h-100 justify-content-end align-items-center">
                         <span class="font-600 font-22 ms-2 text-black me-3" data-menu="notification">
-                            <span class="tw-absolute tw-top-1/2 tw-left-1/2 tw-transform tw--translate-x-1/2 tw--translate-y-1/2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="!tw-fill-current tw-align-bottom" role="img"><title>Unread Notifications</title><g fill="none"><g><path fill="currentColor" d="M12.338 2.01a6 6 0 005.274 7.977V10l2.141 4.008c.513.959.201 2.18-.696 2.728a1.778 1.778 0 01-.928.264H5.871C4.837 17 4 16.105 4 15c0-.348.085-.69.246-.992L6.388 10V8C6.388 4.686 8.9 2 12 2c.113 0 .226.004.338.01zM15 19a3 3 0 11-6 0h6z"></path><circle cx="18" cy="4.25" r="4" fill="#FA3946"></circle></g></g></svg></span>
+                            <span class="tw-absolute tw-top-1/2 tw-left-1/2 tw-transform tw--translate-x-1/2 tw--translate-y-1/2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 class=" text-white tw-align-bottom" role="img"><title>Unread Notifications</title><g fill="none"><g><path fill="currentColor" d="M12.338 2.01a6 6 0 005.274 7.977V10l2.141 4.008c.513.959.201 2.18-.696 2.728a1.778 1.778 0 01-.928.264H5.871C4.837 17 4 16.105 4 15c0-.348.085-.69.246-.992L6.388 10V8C6.388 4.686 8.9 2 12 2c.113 0 .226.004.338.01zM15 19a3 3 0 11-6 0h6z"></path><circle cx="18" cy="4.25" r="4" fill="#FA3946"></circle></g></g></svg></span>
                         </span>
                         <div class="rounded-circle bg-white  p-1 text-center" style="width: 34px;">
                             <span class="fa-fw select-all fas text-secondary font-15"></span>
@@ -74,18 +76,18 @@
 
 
 
-                            <div class="card  bg-gray-light  text-center mx-0  ">
-                                <div class="content d-flex flex-column text-black ">
-                                    <span class="  mb-0 lh-sm font-15">Total <br> Projects</span>
+                            <div class="card  bg-white  text-center mx-0  shadow-sm rounded-sm">
+                                <div class="content d-flex flex-column  ">
+                                    <span class="  mb-0 lh-1 font-15 text-primary">Total <br>  Projects</span>
                                     <h1 class="font-24 font-700 mb-0 pb-0 mt-2">8</h1>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-4">
-                            <div class="card  bg-gray-light text-center mx-0 ">
-                                <div class="content d-flex flex-column text-black">
-                                    <span class=" mb-0 lh-sm font-15">Active <br> Projects</span>
+                            <div class="card  bg-white  text-center mx-0  shadow-sm rounded-sm">
+                                <div class="content d-flex flex-column ">
+                                    <span class=" mb-0 lh-1 font-15 text-primary">Active <br> Projects</span>
                                     <h1 class="font-24 font-700 mb-0 pb-0 mt-2">6</h1>
                                 </div>
                             </div>
@@ -93,9 +95,9 @@
                         </div>
 
                         <div class="col-4">
-                            <div class="card bg-gray-light  text-center mx-0  ">
-                                <div class="content d-flex flex-column text-black">
-                                    <span class=" mb-0 lh-1 font-15">Completed <br> Projects</span>
+                            <div class="card  bg-white  text-center mx-0  shadow-sm rounded-sm">
+                                <div class="content d-flex flex-column ">
+                                    <span class=" mb-0 lh-1 font-15 text-primary">Completed  <br>  Projects</span>
                                     <h1 class="font-24 font-700 mb-0 pb-0 mt-2">2</h1>
                                 </div>
                             </div>
@@ -120,7 +122,7 @@
                                     </div>
                                     <div class="clearfix mb-3"></div>
                                     <div data-bs-parent="#tab-group-UNIQUE-1" class="collapse show" id="tab-UNIQUE-NUMBER-1">
-                                        <div class="card card-style ms-0 rounded  me-0 shadow-sm mb-3">
+                                        <div class="card card-style ms-0 rounded  me-0 shadow-sm mb-3 p-3">
                                             <div class="content">
                                                 <div class="row mb-0">
                                                     <div class="col-6">
@@ -135,7 +137,7 @@
                                                     </div>
                                                     <div class="col-6">
                                                         <h4 class="text-end">
-                                                            <span class="fa-fw select-all fas  font-600 font-18 text-black" data-toast="threeDot"></span>
+                                                            <span class="fa-fw select-all fas  font-600 font-18 text-primary" data-toast="threeDot"></span>
 
                                                         </h4>
                                                         <div id="threeDot" data-autohide="false" class="font-13 text-center w-100 border-0 shadow-sm px-1 py-2 toast toast-right float-end text-black  ">
@@ -149,18 +151,18 @@
                                                 </div>
                                                 <div class="row mb-0">
                                                     <div class="col-6">
-                                                        <div><big><span class="opacity-20 fa-fw select-all fas"></span></big> Due Date 23-april</div>
+                                                        <div><big><span class="text-primary fa-fw select-all fas"></span></big> Due Date 23-april</div>
                                                     </div>
                                                     <div class="col-6">
-                                                        <div class="text-end"><big><span class=" opacity-20 fa-fw select-all fas"></span></big> 09/10 Hours</div>
-                                                        <a href="#" class="bg-gray-dark  w-100 mt-3 py-1 btn  btn-xs mb-3 rounded-xs text-capitalize   shadow-s ">
+                                                        <div class="text-end"><big><span class="text-primary fa-fw select-all fas"></span></big> 09/10 Hours</div>
+                                                        <a href="#" class="bg-primary  w-100 mt-3 py-1 btn  btn-xs mb-3 rounded-xs text-capitalize   shadow-s ">
                                                             <span class="font-14 font-400"> insert manually</span>
                                                         </a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card card-style ms-0 rounded  me-0 shadow-sm mb-3">
+                                        <div class="card card-style ms-0 rounded  me-0 shadow-sm mb-3 p-3">
                                             <div class="content">
                                                 <div class="row mb-0">
                                                     <div class="col-6">
@@ -180,11 +182,11 @@
                                                 </div>
                                                 <div class="row mb-0">
                                                     <div class="col-6">
-                                                        <div><big><span class="fa-fw select-all fas opacity-20"></span></big> Due Date 23-april</div>
+                                                        <div><big><span class="fa-fw select-all fas text-primary"></span></big> Due Date 23-april</div>
                                                     </div>
                                                     <div class="col-6">
-                                                        <div class="text-end"><big><span class="fa-fw select-all fas opacity-20"></span></big> 09/10 Hours</div>
-                                                        <a href="#" class=" w-100 mt-3 py-1 btn bg-gray-dark   btn-xs mb-3 rounded-xs text-capitalize   shadow-s ">
+                                                        <div class="text-end"><big><span class="fa-fw select-all fas text-primary"></span></big> 09/10 Hours</div>
+                                                        <a href="#" class=" w-100 mt-3 py-1 btn bg-primary   btn-xs mb-3 rounded-xs text-capitalize   shadow-s ">
                                                             <span class="font-14 font-400"> insert manually</span>
                                                         </a>
                                                     </div>
@@ -195,24 +197,24 @@
 
 
                                     <div data-bs-parent="#tab-group-UNIQUE-1" class="collapse" id="tab-UNIQUE-NUMBER-2">
-                                        <div class="card card-style ms-0 rounded  me-0 shadow-sm mb-3 ">
+                                        <div class="card card-style ms-0 rounded  me-0 shadow-sm mb-3 p-3">
                                             <div class="content">
                                                 <div class="row  mb-0">
                                                     <div class="col-6">
                                                         <h4>User Story</h4>
                                                         <div class=""><big><span
-                                                                    class="fa-fw select-all fas  opacity-20"></span></big> Due Date 23-april
+                                                                    class="fa-fw select-all fas  text-primary"></span></big> Due Date 23-april
                                                         </div>
-                                                        <a href="#" class="bg-gray-dark w-100 mt-3 py-1 btn  btn-xs mb-3 rounded-xs text-capitalize   shadow-s bg-red-light">
+                                                        <a href="#" class="bg-warning w-100 mt-3 py-1 btn  btn-xs mb-3 rounded-xs text-capitalize   shadow-s bg-red-light">
                                                             <span class="font-14 font-400"> Cancel Review</span>
                                                         </a>
                                                     </div>
                                                     <div class="col-6">
                                                         <h4>&nbsp;</h4>
                                                         <div class="text-end"><big><span
-                                                                    class="fa-fw select-all fas  opacity-20"></span></big> 09/10 Hours
+                                                                    class="fa-fw select-all fas  text-primary"></span></big> 09/10 Hours
                                                         </div>
-                                                        <a href="#" class="bg-gray-dark w-100 mt-3 py-1 btn  btn-xs mb-3 rounded-xs text-capitalize   shadow-s ">
+                                                        <a href="#" class="bg-success w-100 mt-3 py-1 btn  btn-xs mb-3 rounded-xs text-capitalize   shadow-s ">
 
                                                             <span class="font-14 font-400"> Done Review</span>
                                                         </a>
@@ -223,22 +225,24 @@
                                         </div>
 
 
-                                        <div class="card card-style ms-0 rounded  me-0 shadow-sm mb-3 ">
+                                        <div class="card card-style ms-0 rounded  me-0 shadow-sm mb-3 p-3">
                                             <div class="content">
                                                 <div class="row  mb-0">
                                                     <div class="col-6">
                                                         <h4>User Story</h4>
-                                                        <div><big><span class="fa-fw select-all fas  opacity-20"></span></big> Due Date 23-april</div>
-                                                        <a href="#" class="bg-gray-dark w-100 mt-3 py-1 btn  btn-xs mb-3 rounded-xs text-capitalize   shadow-s ">
+                                                        <div class=""><big><span
+                                                                    class="fa-fw select-all fas  text-primary"></span></big> Due Date 23-april
+                                                        </div>
+                                                        <a href="#" class="bg-warning w-100 mt-3 py-1 btn  btn-xs mb-3 rounded-xs text-capitalize   shadow-s bg-red-light">
                                                             <span class="font-14 font-400"> Cancel Review</span>
                                                         </a>
                                                     </div>
                                                     <div class="col-6">
                                                         <h4>&nbsp;</h4>
                                                         <div class="text-end"><big><span
-                                                                    class="fa-fw select-all fas opacity-20"></span></big> 09/10 Hours
+                                                                    class="fa-fw select-all fas  text-primary"></span></big> 09/10 Hours
                                                         </div>
-                                                        <a href="#" class="bg-gray-dark w-100 mt-3 py-1 btn  btn-xs mb-3 rounded-xs text-capitalize   shadow-s ">
+                                                        <a href="#" class="bg-success w-100 mt-3 py-1 btn  btn-xs mb-3 rounded-xs text-capitalize   shadow-s ">
 
                                                             <span class="font-14 font-400"> Done Review</span>
                                                         </a>
@@ -250,16 +254,16 @@
                                     </div>
 
                                     <div data-bs-parent="#tab-group-UNIQUE-1" class="collapse" id="tab-UNIQUE-NUMBER-3">
-                                        <div class="card card-style ms-0 rounded  me-0 shadow-sm">
+                                        <div class="card card-style ms-0 rounded  me-0 shadow-sm p-3">
                                             <div class="content">
                                                 <div class="row mb-0">
                                                     <div class="col-6">
-                                                        <h4>Infography</h4>
-                                                        <div><big><span class="fa-fw select-all fas  opacity-20"></span></big> Due Date 23-april</div>
+                                                        <h4 >Infography</h4>
+                                                        <div><big><span class="fa-fw select-all fas text-primary"></span></big> Due Date 23-april</div>
                                                     </div>
                                                     <div class="col-6">
                                                         <h4>&nbsp;</h4>
-                                                        <div><big><span class="fa-fw select-all fas  opacity-20"></span></big> 09/10 Hours</div>
+                                                        <div><big><span class="fa-fw select-all fas  text-primary"></span></big> 09/10 Hours</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -283,8 +287,8 @@
         <div id="notification" class="menu menu-box-modal rounded-m p-4" data-menu-height="250" data-menu-width="350">
 
             <div class="d-flex justify-content-between align-items-center w-100 ">
-                <h5 class="  font-16 font-500">Notifications</h5>
-                <a href="" class="float-end d-inlie text-black text-underline"><u>Mark all as read</u></a>
+                <h5 class="  font-16 font-500 text-primary">Notifications</h5>
+                <a href="" class="float-end d-inlie text-success text-underline"><u>Mark all as read</u></a>
             </div>
 
             <div class="  pb-0">
@@ -348,10 +352,7 @@
                 color: #000!important;
             }
             
-            .bg-highlight {
-                background: #333333!important;
-                color: #fff!important;
-            }
+            
             
             [aria-expanded="true"] {
                 border-bottom: 2px solid black!important;
@@ -363,7 +364,11 @@
                 align-self: unset;
                 margin: unset;
             }
-            
+            #tab-group-UNIQUE-1 .bg-highlight {
+                background: #2D8BD7!important;
+                color: #fff!important;
+                border-bottom: unset!important;
+            }
                  </style>
 </body>
 
