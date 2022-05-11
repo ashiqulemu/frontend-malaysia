@@ -55,8 +55,9 @@
                 </div>
                 <div class="col-4">
                     <div class="d-flex h-100 justify-content-end align-items-center">
-                        <span class="font-600 font-22 ms-2 text-black me-3">
-                            <i class="fas fa-bell"></i></span>
+                        <span class="font-600 font-22 ms-2 text-black me-3" data-menu="notification">
+                            <i class="fas fa-bell"></i>
+                        </span>
                         <div class="rounded-circle bg-white  p-1 text-center" style="width: 34px;">
                             <span class="fa-fw select-all fas text-secondary font-15"></span>
                         </div>
@@ -69,7 +70,10 @@
             <div class="mt-5">
                 <div class="container">
                     <div class="row mb-0">
-                        <div class="col-4"> 
+                        <div class="col-4">
+
+
+
                             <div class="card  bg-gray-light  text-center mx-0  ">
                                 <div class="content d-flex flex-column text-black ">
                                     <span class="  mb-0 lh-sm font-17">Total <br> Projects</span>
@@ -131,8 +135,15 @@
                                                     </div>
                                                     <div class="col-6">
                                                         <h4 class="text-end">
-                                                            <span class="fa-fw select-all fas  font-600 font-18 text-black"></span>
+                                                            <span class="fa-fw select-all fas  font-600 font-18 text-black" data-toast="threeDot"></span>
+
                                                         </h4>
+                                                        <div id="threeDot" data-autohide="false" class="font-13 text-center w-100 border-0 shadow-sm px-1 py-2 toast toast-right float-end text-black  ">
+
+                                                            <span data-menu="menu-option-1">
+                                                                <i class="fa-solid fa-circle-check"></i> Mark for Review
+                                                            </span>
+                                                        </div>
 
                                                     </div>
                                                 </div>
@@ -243,7 +254,7 @@
                                             <div class="content">
                                                 <div class="row mb-0">
                                                     <div class="col-6">
-                                                        <h4>Infograsphy</h4>
+                                                        <h4>Infography</h4>
                                                         <div><big><span class="fa-fw select-all fas  opacity-20"></span></big> Due Date 23-april</div>
                                                     </div>
                                                     <div class="col-6">
@@ -267,6 +278,69 @@
 
         </div>
 
+        <!-- notification modal -->
+
+        <div id="notification" class="menu menu-box-modal rounded-m p-4" data-menu-height="250" data-menu-width="350">
+
+            <div class="d-flex justify-content-between align-items-center w-100 ">
+                <h5 class="  font-16 font-500">Notifications</h5>
+                <a href="" class="float-end d-inlie text-black text-underline"><u>Mark all as read</u></a>
+            </div>
+
+            <div class="  pb-0">
+                <div class="content m-0" id="tab-group-3">
+                    <div class="notification-tab border-bottom " data-highlight="activeBorder">
+                        <a href="#" class="no-effect text-black font-16 font-600" data-active data-bs-toggle="collapse" aria-expanded="true" data-bs-target="#tab-8">All</a>
+                        <!-- <a href="#" class="no-effect" data-bs-toggle="collapse" data-bs-target="#tab-9">two</a> -->
+                    </div>
+                    <div data-bs-parent="#tab-group-3" class="collapse show" id="tab-8">
+                        <div class="row mt-3 ">
+                            <div class="col-3 text-center">
+                                <img src="./images/avatars/10m.png" class="rounded img-fluid" alt="">
+                            </div>
+                            <div class="col-9 d-flex align-items-center">
+                                <p>
+                                    <span class="font-12">You are added to a new project</span> <br>
+                                    <small class=" ">2h ago</small>
+
+                                </p>
+                            </div>
+                            <div class="row border-bottom mb-0">
+                                <div class="col-3"></div>
+                                <div class="col-9">
+                                    <a href="#" class="btn btn-xxs mb-3 rounded-s mt-2 bg-highlight  font-700 shadow-s ">
+                                        View Project
+                                     </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- <div data-bs-parent="#tab-group-3" class="collapse" id="tab-9">
+                        dfg
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+
+        <div id="menu-option-1" class="menu menu-box-modal rounded-m p-4" data-menu-height="230" data-menu-width="350">
+            <h5 class="text-center font-16 font-500">Mark for Review</h5>
+            <div class="input-style has-borders no-icon mb-4 mt-2">
+                <textarea style="height:85px;" placeholder="Add Note" class="bg-gray-light color-black"></textarea>
+            </div>
+            <div class="d-flex justify-content-center align-items-center w-100 ">
+                <a href="#" class=" mx-1 w-50 my-1 btn-border border-gray-dark color-gray-dark py-1 btn  btn-xs   rounded-xs text-capitalize   shadow-s ">
+                    <span class="font-14 font-400"> No</span>
+                </a>
+                <a href="#" class="bg-gray-dark mx-1 w-50 my-1  py-1 btn  btn-xs   rounded-xs text-capitalize   shadow-s ">
+                    <span class="font-14 font-400"> Yes</span>
+                </a>
+            </div>
+        </div>
+
+
         <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
         <script type="text/javascript" src="scripts/custom.js"></script>
         <style>
@@ -277,6 +351,17 @@
             .bg-highlight {
                 background: #333333!important;
                 color: #fff!important;
+            }
+            
+            [aria-expanded="true"] {
+                border-bottom: 2px solid black!important;
+                background-color: unset;
+                width: unset;
+                text-align: unset;
+                border-right: unset;
+                border: unset;
+                align-self: unset;
+                margin: unset;
             }
         </style>
 </body>
