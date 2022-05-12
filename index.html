@@ -23,8 +23,10 @@
     </div>
 
     <div id="page">
+
         <div class="header header-auto-show header-fixed header-logo-center">
             <a href="index.html" class="header-title">AppKit</a>
+             
             <a href="#" data-menu="menu-main" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
             <a href="#" data-toggle-theme class="header-icon header-icon-4 show-on-theme-dark"><i
                     class="fas fa-sun"></i></a>
@@ -33,15 +35,19 @@
             <a href="#" data-menu="menu-share" class="header-icon header-icon-3"><i class="fas fa-share-alt"></i></a>
         </div>
 
-        <div id="footer-bar" class="footer-bar-6">
+        <!-- footer -->
+
+        <!-- <div id="footer-bar" class="footer-bar-6">
             <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
             <a href="index-pages.html"><i class="fa fa-file"></i><span>Pages</span></a>
             <a href="index.html" class="circle-nav active-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
             <a href="index-projects.html"><i class="fa fa-image"></i><span>Projects</span></a>
             <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
-        </div>
+        </div> -->
+
         <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-width="280" data-menu-active="nav-welcome"
-            data-menu-load="menu-main.html"></div>
+            data-menu-load="menu-main.html">
+        </div>
 
         <!-- <div class="header  border-0 header-fixed header-logo-left">
             <div class="row mb-0 shadow-m py-3 px-3  color-white bg-blue-dark">
@@ -70,31 +76,38 @@
             </div>
         </div> -->
 
-        <div class="page-title page-title-fixed">
-            <h1> Appkit </h1>
-            <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i
-                    class="fa fa-user"></i></a>
-            <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i
-                    class="fa fa-plus"></i></a>
-            <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="notification">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    class=" text-primary tw-align-bottom" role="img">
-                    <title>Unread Notifications</title>
-                    <g fill="none">
-                        <g>
-                            <path fill="currentColor"
-                                d="M12.338 2.01a6 6 0 005.274 7.977V10l2.141 4.008c.513.959.201 2.18-.696 2.728a1.778 1.778 0 01-.928.264H5.871C4.837 17 4 16.105 4 15c0-.348.085-.69.246-.992L6.388 10V8C6.388 4.686 8.9 2 12 2c.113 0 .226.004.338.01zM15 19a3 3 0 11-6 0h6z">
-                            </path>
-                            <circle cx="18" cy="4.25" r="4" fill="#FA3946"></circle>
+       
+
+        <div class="header d-flex justify-content-between align-items-center px-3 shadow-m">
+              <!-- <h1> Appkit </h1> -->
+            <div class="flex-fill">
+                <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+            <div class="flex-fill d-flex justify-content-end">
+                <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main">
+                    <i class="fa fa-user"></i>
+                </a>
+             
+                <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="notification">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class=" text-primary tw-align-bottom" role="img">
+                        <title>Unread Notifications</title>
+                        <g fill="none">
+                            <g>
+                                <path fill="currentColor"
+                                    d="M12.338 2.01a6 6 0 005.274 7.977V10l2.141 4.008c.513.959.201 2.18-.696 2.728a1.778 1.778 0 01-.928.264H5.871C4.837 17 4 16.105 4 15c0-.348.085-.69.246-.992L6.388 10V8C6.388 4.686 8.9 2 12 2c.113 0 .226.004.338.01zM15 19a3 3 0 11-6 0h6z">
+                                </path>
+                                <circle cx="18" cy="4.25" r="4" fill="#FA3946"></circle>
+                            </g>
                         </g>
-                    </g>
-                </svg>
-            </a>
-
-            <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i
-                    class="fa fa-bars"></i></a>
-
+                    </svg>
+                </a>
+            </div> 
         </div>
+
         <div class="clearfix"> &nbsp; </div>
         <div class="clearfix"> &nbsp; </div>
         <div class="clearfix"> &nbsp; </div>
@@ -184,9 +197,7 @@
                                     <div class="content my-1">
                                         <div class="row mb-0">
                                             <div class="col-6 px-1">
-                                                <h4 class="mb-3">Wireframe
-
-                                                </h4>
+                                                <h4 class="mb-3">Wireframe  </h4>
                                                 <span class="font-14 text-black">Role:</span> <span
                                                     class="opacity-50">UI
                                                     Designer</span>
@@ -194,17 +205,40 @@
                                             </div>
                                             <div class="col-6 px-1">
                                                 <h4 class="text-end">
-                                                    <span class="fa-fw select-all fas  font-600 font-18 text-primary"
-                                                        data-toast="threeDot"></span>
+                                                    <!-- <span type="button" class="fa-fw select-all fas  font-600 font-18 text-primary"
+                                                    id="header-2"
+                                                     data-bs-toggle="dropdown">
+                                                    </span> -->
+
+                                                    <button type="button" id="header-2" data-bs-toggle="dropdown" class="p-2 header-icon header-icon-2 show" aria-expanded="true">
+                                                        <i class="text-primary fas fa-share-alt"></i>
+                                                        <span class="badge bg-green1-dark">3</span>
+                                                    </button>
+                                                   
+                                                    <div class="dropdown-menu bg-theme float-right border-0 shadow-l rounded-s me-2 mt-2" aria-labelledby="header-2"> 
+                                                        <div class="divider mb-0"></div>
+                                                        <div class="list-group list-custom-small ps-2 pe-3">
+                                                            <a href="#">
+                                                                <i class="fab font-18 fa-facebook-square color-facebook"></i>
+                                                                <span>Facebook</span>
+                                                                <i class="fa fa-angle-right"></i>
+                                                            </a>        
+                                                            <a href="#">
+                                                                <i class="fab font-18 fa-twitter-square color-twitter"></i>
+                                                                <span>Twitter</span>
+                                                                <i class="fa fa-angle-right"></i>
+                                                            </a>        
+                                                            <a href="#" class="border-0">
+                                                                <i class="fab font-18 fa-whatsapp-square color-whatsapp"></i>
+                                                                <span>WhatsApp</span>
+                                                                <i class="fa fa-angle-right"></i>
+                                                            </a>        
+                                                        </div>
+                                                    </div> 
 
                                                 </h4>
-                                                <div id="threeDot" data-autohide="false"
-                                                    class=" bg-warning font-13 text-center w-100 border-0 shadow-xl px-1 py-2 toast toast-right float-end text-black  ">
-
-                                                    <span data-menu="menu-option-1">
-                                                        <i class="fa-solid fa-circle-check"></i> Mark for Review
-                                                    </span>
-                                                </div>
+                                              
+                                               
 
                                             </div>
                                         </div>
@@ -292,9 +326,11 @@
                                         <div class="row  mb-0">
                                             <div class="col-6 px-1">
                                                 <h4>User Story</h4>
-                                                <div class=""><big><span
-                                                            class="fa-fw select-all fas  text-primary"></span></big>
-                                                    Due Date 23-april
+                                                <div class="">
+                                                    <big>
+                                                        <span class="fa-fw select-all fas  text-primary"></span>
+                                                     </big>
+                                                     Due Date 23-april
                                                 </div>
                                                 <a href="#"
                                                     class="bg-warning w-100 mt-3 py-1 btn  btn-xs mb-1 rounded-xs text-capitalize   shadow-s bg-red-light">
@@ -303,13 +339,13 @@
                                             </div>
                                             <div class="col-6 px-1">
                                                 <h4>&nbsp;</h4>
-                                                <div class="text-end"><big><span
-                                                            class="fa-fw select-all fas  text-primary"></span></big>
+                                                <div class="text-end">
+                                                    <big>
+                                                         <span  class="fa-fw select-all fas  text-primary"></span>
+                                                    </big>
                                                     09/10 Hours
                                                 </div>
-                                                <a href="#"
-                                                    class="bg-primary w-100 mt-3 py-1 btn  btn-xs  rounded-xs text-capitalize   shadow-s mb-1">
-
+                                                <a href="#"  class="bg-primary w-100 mt-3 py-1 btn  btn-xs  rounded-xs text-capitalize   shadow-s mb-1"> 
                                                     <span class="font-13 font-400"> Done Review</span>
                                                 </a>
                                             </div>
