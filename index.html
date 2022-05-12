@@ -225,8 +225,7 @@
                                                                 data-toast="threeDot"></span>
 
                                                         </h4>
-                                                        <div id="threeDot" data-autohide="false"
-                                                            class=" bg-warning font-13 text-center w-100 border-0 shadow-xl px-1 py-2 toast toast-right float-end text-black  ">
+                                                        <div id="threeDot" data-autohide="false" class=" bg-warning font-13 text-center w-100 border-0 shadow-xl px-1 py-2 toast toast-right float-end text-black  ">
 
                                                             <span data-menu="menu-option-1">
                                                                 <i class="fa-solid fa-circle-check"></i> Mark for Review
@@ -275,10 +274,18 @@
 
                                                     </div>
                                                     <div class="col-6 px-1">
-                                                        <h4 class="text-end"><span
-                                                                class="fa-fw select-all fas text-primary "></span>
-                                                        </h4>
+                                                        <h4 class="text-end">
+                                                            <span
+                                                                class="fa-fw select-all fas  font-600 font-18 text-primary"
+                                                                data-toast="threeDot2"></span>
 
+                                                        </h4>
+                                                        <div id="threeDot2" data-autohide="false" class=" bg-warning font-13 text-center w-100 border-0 shadow-xl px-1 py-2 toast toast-right float-end text-black  ">
+
+                                                            <span data-menu="menu-option-2">
+                                                                <i class="fa-solid fa-circle-check"></i> Mark for Review
+                                                            </span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="row mb-0">
@@ -459,11 +466,28 @@
             </div>
             <div class="d-flex justify-content-center align-items-center w-100 ">
                 <a href="#"
-                    class=" mx-1 w-50 my-1 btn-border border-gray-dark color-gray-dark py-1 btn  btn-xs   rounded-xs text-capitalize   shadow-s ">
+                    class=" mx-1 w-50 my-1  bg-danger text-white py-1 btn  btn-xs   rounded-xs text-capitalize   shadow-s ">
                     <span class="font-14 font-400"> No</span>
                 </a>
                 <a href="#"
-                    class="bg-gray-dark mx-1 w-50 my-1  py-1 btn  btn-xs   rounded-xs text-capitalize   shadow-s ">
+                    class="bg-primary mx-1 w-50 my-1  py-1 btn  btn-xs   rounded-xs text-capitalize   shadow-s ">
+                    <span class="font-14 font-400"> Yes</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="menu-option-2" class="menu menu-box-modal rounded-m p-4" data-menu-height="230" data-menu-width="350">
+            <h5 class="text-center font-16 font-500">Mark for Review</h5>
+            <div class="input-style has-borders no-icon mb-4 mt-2">
+                <textarea style="height:85px;" placeholder="Add Note" class="bg-gray-light color-black"></textarea>
+            </div>
+            <div class="d-flex justify-content-center align-items-center w-100 ">
+                <a href="#"
+                    class=" mx-1 w-50 my-1  bg-danger text-white py-1 btn  btn-xs   rounded-xs text-capitalize   shadow-s ">
+                    <span class="font-14 font-400"> No</span>
+                </a>
+                <a href="#"
+                    class="bg-primary mx-1 w-50 my-1  py-1 btn  btn-xs   rounded-xs text-capitalize   shadow-s ">
                     <span class="font-14 font-400"> Yes</span>
                 </a>
             </div>
