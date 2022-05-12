@@ -24,7 +24,7 @@
 
     <div id="page">
 
-        <div class="header header-auto-show header-fixed header-logo-center">
+        <!-- <div class="header header-auto-show header-fixed header-logo-center">
             <a href="index.html" class="header-title">AppKit</a>
              
             <a href="#" data-menu="menu-main" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
@@ -33,7 +33,7 @@
             <a href="#" data-toggle-theme class="header-icon header-icon-4 show-on-theme-light"><i
                     class="fas fa-moon"></i></a>
             <a href="#" data-menu="menu-share" class="header-icon header-icon-3"><i class="fas fa-share-alt"></i></a>
-        </div>
+        </div> -->
 
         <!-- footer -->
 
@@ -78,18 +78,22 @@
 
        
 
-        <div class="header d-flex justify-content-between align-items-center px-3 shadow-m">
+        <div class=" py-3 d-flex justify-content-between align-items-center px-3  ">
               <!-- <h1> Appkit </h1> -->
             <div class="flex-fill">
-                <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main">
-                    <i class="fa fa-bars"></i>
+                <a href="#" class="page-title-icon   bg-theme color-theme" data-menu="menu-main">
+                    <i class="fa fa-bars font-18"></i>
                 </a>
             </div>
 
             <div class="flex-fill d-flex justify-content-end">
                 <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main">
+                    <i class="fa fa-plus"></i>
+                </a>
+                <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main">
                     <i class="fa fa-user"></i>
                 </a>
+               
              
                 <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="notification">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -108,9 +112,9 @@
             </div> 
         </div>
 
+        <!-- <div class="clearfix"> &nbsp; </div>
         <div class="clearfix"> &nbsp; </div>
-        <div class="clearfix"> &nbsp; </div>
-        <div class="clearfix"> &nbsp; </div>
+        <div class="clearfix"> &nbsp; </div> -->
         <div class="page-content">
             <div class="container-fluid mt-1">
                 <h3 class="mb-4">User Dashboard</h3>
@@ -210,8 +214,13 @@
                                                      data-bs-toggle="dropdown">
                                                     </span> -->
 
-                                                    <button type="button" id="header-2" data-bs-toggle="dropdown" class="p-2 header-icon header-icon-2 show" aria-expanded="true">
-                                                        <i class="text-primary fas fa-share-alt"></i>
+                                                    <!-- <button type="button" id="header-2" data-bs-toggle="dropdown" class="p-2 header-icon header-icon-2 show" aria-expanded="true">
+                                                        <i class="fas fa-ellipsis-v text-primary"></i>
+                                                        <span class="badge bg-green1-dark">3</span>
+                                                    </button> -->
+                                                    
+                                                    <button type="button" data-menu="menu-main-sheet" class="p-2 header-icon header-icon-2 show" >
+                                                        <i class="fas fa-ellipsis-v text-primary"></i>
                                                         <span class="badge bg-green1-dark">3</span>
                                                     </button>
                                                    
@@ -462,7 +471,6 @@
             </div>
         </div>
 
-
         <div id="menu-option-1" class="menu menu-box-modal rounded-m p-4" data-menu-height="230" data-menu-width="350">
             <h5 class="text-center font-16 font-500"> Mark for Review</h5>
             <div class="input-style has-borders no-icon mb-4 mt-2">
@@ -495,6 +503,9 @@
                     <span class="font-14 font-400"> Yes</span>
                 </a>
             </div>
+        </div>
+        <div id="menu-main-sheet" class="menu menu-box-bottom rounded-0 rounded-m d-flex align-items-center justify-content-center" data-menu-height="260" data-menu-load="options.html" data-menu-height="500" data-menu-active="nav-pages">
+
         </div>
 
 
