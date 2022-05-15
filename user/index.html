@@ -8,13 +8,13 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
     <title>AppKit BootStrap</title>
-    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../fonts/css/fontawesome-all.min.css" />
     <link rel="manifest" href="_manifest.json" />
-    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../app/icons/icon-192x192.png" />
 </head>
 
 <body class="" data-highlight="highlight-red">
@@ -198,135 +198,94 @@
                             </div>
                             <div class="clearfix mb-3"></div>
                             <div data-bs-parent="#tab-group-UNIQUE-1" class="collapse show" id="tab-UNIQUE-NUMBER-1">
-                                <div class="card card-style mb-3 p-3 mx-0">
-                                    <div class="content my-1">
-                                        <div class="row mb-0">
-                                            <div class="col-6 px-1">
-                                                <h4 class="mb-3">Wireframe  </h4>
-                                                <span class="font-14 text-black">Role:</span> <span
-                                                    class="opacity-50">UI
-                                                    Designer</span>
-
-                                            </div>
-                                            <div class="col-6 px-1">
-                                                <h4 class="text-end">
-                                                    <!-- <span type="button" class="fa-fw select-all fas  font-600 font-18 text-primary"
-                                                    id="header-2"
-                                                     data-bs-toggle="dropdown">
-                                                    </span> -->
-
-                                                    <!-- <button type="button" id="header-2" data-bs-toggle="dropdown" class="p-2 header-icon header-icon-2 show" aria-expanded="true">
-                                                        <i class="fas fa-ellipsis-v text-primary"></i>
-                                                        <span class="badge bg-green1-dark">3</span>
-                                                    </button> -->
-                                                    
-                                                    <button type="button" data-menu="menu-main-sheet" class="p-2 header-icon header-icon-2 show" >
-                                                        <i class="fas fa-ellipsis-v text-primary"></i>
-                                                        <span class="badge bg-green1-dark">3</span>
-                                                    </button>
-                                                   
-                                                    <div class="dropdown-menu bg-theme float-right border-0 shadow-l rounded-s me-2 mt-2" aria-labelledby="header-2"> 
-                                                        <div class="divider mb-0"></div>
-                                                        <div class="list-group list-custom-small ps-2 pe-3">
-                                                            <a href="#">
-                                                                <i class="fab font-18 fa-facebook-square color-facebook"></i>
-                                                                <span>Facebook</span>
-                                                                <i class="fa fa-angle-right"></i>
-                                                            </a>        
-                                                            <a href="#">
-                                                                <i class="fab font-18 fa-twitter-square color-twitter"></i>
-                                                                <span>Twitter</span>
-                                                                <i class="fa fa-angle-right"></i>
-                                                            </a>        
-                                                            <a href="#" class="border-0">
-                                                                <i class="fab font-18 fa-whatsapp-square color-whatsapp"></i>
-                                                                <span>WhatsApp</span>
-                                                                <i class="fa fa-angle-right"></i>
-                                                            </a>        
-                                                        </div>
-                                                    </div> 
-
-                                                </h4>
-                                              
-                                               
-
-                                            </div>
-                                        </div>
-                                        <div class="row mb-0">
-                                            <div class="col-6 px-1">
-                                                <div>
-                                                    <big>
-                                                        <span class="text-primary fa-fw select-all fas"></span>
-                                                    </big>
-                                                    Due Date 23-april
+                                 
+                                <div class="card card-style">
+                                    <div class="card" data-card-height="250" style="height: 300px; background:url('../images/avatars/2m.png');">
+                                        
+                                        <div class="card-bottom pb-3 pe-3 ps-3">
+                                            <div class="row mb-0">
+                                                <div class="col-4 text-start">
+                                                    <span class="color-red-dark opacity-50"><i class="fa fa-calendar pe-2"></i>Due: 23-april</span>
+                                                </div>
+                                                <div class="col-4 text-center">
+                                                    <span class="color-white opacity-50"><i class="fa fa-tag pe-2"></i> UI Designer</span>
+                                                </div>
+                                                <div class="col-4 text-end">
+                                                    <span class="color-white opacity-50"><span class=" fa-fw select-all fas"></span> 09/10 Hours</span>
                                                 </div>
                                             </div>
-                                            <div class="col-6">
-                                                <div class="text-end">
-                                                    <big> <span class="text-primary fa-fw select-all fas"></span></big>
-                                                    09/10 Hours
+                                        </div>
+                                        <div class="card-overlay bg-gradient rounded-0"></div>
+                                    </div>    
+                                    <div class="content mt-n2">
+                                        <div class="float-start">  
+                                            <p class="text-warning font-600 mb-n1 ">High</p>                                          
+                                            <h1>Wireframe</h1>                                           
+                                        </div>
+                                        <div class="float-end mt-2">                                            
+                                            <a href="#" class="icon icon-xs bg-theme color-theme shadow-xl rounded-xl ms-2" id="submit-hour"  data-bs-toggle="dropdown">
+                                                <i class="fas fa-ellipsis-v text-primary"></i>
+                                            </a>
+                                            <div class="dropdown-menu bg-theme border-0 shadow-l rounded-s me-2 mt-2" aria-labelledby="submit-hour"> 
+                                                
+                                                <div class="list-group list-custom-small ps-2 pe-2"> 
+                                                    <a href="#" data-menu="review-modal">
+                                                        <i class="fa fa-solid fa-circle-check text-primary shadow-0 mx-0"></i>
+                                                        <span>Mark for review</span> 
+                                                    </a>
+                                                    <a href="#" class="bg-primary float-end py-1 btn  btn-xs rounded-xs text-capitalize   shadow-s ">
+                                                        <span class="font-14 font-400 color-white"> Submit Hour </span>
+                                                    </a>
                                                 </div>
                                             </div>
-                                            <div class="col-12 px-1 d-flex align-items-center justify-content-between">
-                                                <a href="#" class="chip chip-s bg-yellow-light px-3 mb-0 float-start">
-                                                    <span class="  color-black font-14 font-400 "> High </span>
-                                                </a>
-                                                <a href="#"
-                                                    class="bg-primary float-end  w-50 mt-3 py-1 btn  btn-xs mb-1 rounded-xs text-capitalize   shadow-s ">
-                                                    <span class="font-14 font-400"> Submit Hour </span>
-                                                </a>
-                                            </div>
                                         </div>
+                                        <div class="clearfix"></div> 
                                     </div>
                                 </div>
-                                <div class="card card-style mb-3 p-3 mx-0">
-                                    <div class="content my-1">
-                                        <div class="row mb-0">
-                                            <div class="col-6 px-1">
-                                                <h4 class="mb-3">Visual Design
-                                                    <a href="#" class="chip chip-s bg-yellow-light px-3 mb-0"> </a>
-                                                </h4>
-                                                <span class="font-14 text-black">Role:</span>
-                                                <span class="opacity-50">UI
-                                                    Designer
-                                                </span>
-
-                                            </div>
-                                            <div class="col-6 px-1">
-                                                <h4 class="text-end">
-                                                    <span class="fa-fw select-all fas  font-600 font-18 text-primary"
-                                                        data-toast="threeDot2"></span>
-
-                                                </h4>
-                                                <div id="threeDot2" data-autohide="false"
-                                                    class=" bg-warning font-13 text-center w-100 border-0 shadow-xl px-1 py-2 toast toast-right float-end text-black  ">
-
-                                                    <span data-menu="menu-option-2">
-                                                        <i class="fa-solid fa-circle-check"></i> Mark for Review
-                                                    </span>
+                                <div class="card card-style">
+                                    <div class="card" data-card-height="250" style="height: 300px; background:url('../images/avatars/13m.png');">
+                                        
+                                        <div class="card-bottom pb-3 pe-3 ps-3">
+                                            <div class="row mb-0">
+                                                <div class="col-4 text-start">
+                                                    <span class="color-red-dark opacity-50"><i class="fa fa-calendar pe-2"></i>Due: 23-april</span>
+                                                </div>
+                                                <div class="col-4 text-center">
+                                                    <span class="color-white opacity-50"><i class="fa fa-tag pe-2"></i> UI Designer</span>
+                                                </div>
+                                                <div class="col-4 text-end">
+                                                    <span class="color-white opacity-50"><span class=" fa-fw select-all fas"></span> 09/10 Hours</span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row mb-0">
-                                            <div class="col-6 px-1">
-                                                <div><big><span class="fa-fw select-all fas text-primary"></span></big>
-                                                    Due Date 23-april</div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="text-end"><big><span
-                                                            class="fa-fw select-all fas text-primary"></span></big>
-                                                    09/10 Hours</div>
-
-                                            </div>
-                                            <div class="col-12">
-                                                <a href="#"
-                                                    class="bg-primary float-end  w-50 mt-3 py-1 btn  btn-xs  rounded-xs text-capitalize   shadow-s mb-1">
-                                                    <span class="font-14 font-400"> Submit Hour</span>
-                                                </a>
+                                        <div class="card-overlay bg-gradient rounded-0"></div>
+                                    </div>    
+                                    <div class="content mt-n2">
+                                        <div class="float-start">  
+                                            <p class="text-warning font-600 mb-n1 ">High</p>                                          
+                                            <h1>Visual Design </h1>                                           
+                                        </div>
+                                        <div class="float-end mt-2">                                            
+                                            <a href="#" class="icon icon-xs bg-theme color-theme shadow-xl rounded-xl ms-2" id="submit-hour"  data-bs-toggle="dropdown">
+                                                <i class="fas fa-ellipsis-v text-primary"></i>
+                                            </a>
+                                            <div class="dropdown-menu bg-theme border-0 shadow-l rounded-s me-2 mt-2" aria-labelledby="submit-hour"> 
+                                                
+                                                <div class="list-group list-custom-small ps-2 pe-2"> 
+                                                    <a href="#" data-menu="review-modal">
+                                                        <i class="fa fa-solid fa-circle-check text-primary shadow-0 mx-0"></i>
+                                                        <span>Mark for review</span> 
+                                                    </a>
+                                                    <a href="#" class="bg-primary float-end py-1 btn  btn-xs rounded-xs text-capitalize   shadow-s ">
+                                                        <span class="font-14 font-400 color-white"> Submit Hour </span>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="clearfix"></div> 
                                     </div>
                                 </div>
+                                
                             </div>
 
 
@@ -443,7 +402,7 @@
                     <div data-bs-parent="#tab-group-3" class="collapse show" id="tab-8">
                         <div class="row mt-3 ">
                             <div class="col-3 text-center">
-                                <img src="./images/avatars/10m.png" class="rounded img-fluid" alt="">
+                                <img src="../images/avatars/10m.png" class="rounded img-fluid" alt="">
                             </div>
                             <div class="col-9 d-flex align-items-center">
                                 <p>
@@ -472,7 +431,7 @@
             </div>
         </div>
 
-        <div id="menu-option-1" class="menu menu-box-modal rounded-m p-4" data-menu-height="230" data-menu-width="350">
+        <div id="review-modal" class="menu menu-box-modal rounded-m p-4" data-menu-height="230" data-menu-width="350">
             <h5 class="text-center font-16 font-500"> Mark for Review</h5>
             <div class="input-style has-borders no-icon mb-4 mt-2">
                 <textarea style="height:85px;" placeholder="Add Note" class="bg-gray-light color-black"></textarea>
@@ -508,8 +467,8 @@
         <div id="menu-main-sheet" class="menu menu-box-bottom rounded-0 rounded-m " data-menu-height="400" data-menu-load="options.html" data-menu-height="500" data-menu-active="nav-pages"></div>
 
 
-        <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-        <script type="text/javascript" src="scripts/custom.js"></script>
+        <script type="text/javascript" src="../scripts/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../scripts/custom.js"></script>
 
 </body>
 
